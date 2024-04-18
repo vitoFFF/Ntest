@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nino</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   <!-- Link to external CSS file -->
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<div class="title">
+    <h1 style="color: #033a8d; font-style: italic; font-size: 36px">ნინოს ავტოსკოლა !</h1>
+</div>
+    
+<!-- Buttons -->
+<!-- <button class="btn" onclick="startExam()">გამოცდის დაწყება</button> -->
+<div class="button-container">
+    <!-- Add a start button -->
+<button id="startButton" class="btn common-width" onclick="startTracking()">Start Tracking</button>
+
+    <button class="btn common-width" onclick="changeRoute('N1')">Route N1</button>
+    <button class="btn common-width" onclick="changeRoute('N1')">Route N2</button>
+   
+  
+   </div>
+  
+
+
+<!-- <audio id="audioPlayer" src="audio/100l.mp3" onended="stopAudio()"></audio>
+<audio id="startAudio" src="audio/start.mp3"></audio> -->
+
+<div id="map"></div>
+
+<!-- External JavaScript File -->
+<script src="script.js" defer></script>
+
+
+
+</body>
+</html>
